@@ -61,7 +61,7 @@ history <- model %>% fit(
   
   epochs = 10,
   
-  batch_size = 128,
+  batch_size = 100,
   
   validation_split = 0.4
   
