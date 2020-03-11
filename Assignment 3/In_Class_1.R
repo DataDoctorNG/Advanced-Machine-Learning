@@ -89,6 +89,8 @@ val_steps <- (300000 - 200001 - lookback) / batch_size
 test_steps <- (nrow(data) - 300001 - lookback) / batch_size
 
 #Defining the Model and Plotting the Results
+library(tensorflow)
+library(keras)
 model <- keras_model_sequential() %>% 
   layer_gru(units = 32, 
             dropout = 0.1, 
